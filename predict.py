@@ -9,6 +9,7 @@ from keras.layers import Dropout
 from keras.layers import LSTM
 from keras.layers import BatchNormalization as BatchNorm
 from keras.layers import Activation
+import time
 
 def generate():
     """ Generate a piano midi file """
@@ -136,3 +137,4 @@ def create_midi(prediction_output):
 
 if __name__ == '__main__':
     generate()
+    
